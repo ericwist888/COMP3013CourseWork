@@ -1,5 +1,6 @@
 import styles from './assignment.module.css';
 import { TbTrash } from "react-icons/tb";
+// pay attention to the directory paths
 
 export function Assignment({ title, done, deleteAssignment, toggleDone }) {
 
@@ -11,7 +12,7 @@ export function Assignment({ title, done, deleteAssignment, toggleDone }) {
       <p className={done ? styles.textCompleted : ''}>{title}</p> 
 
       <button className={styles.deleteButton} onClick={deleteAssignment}>
-        <TbTrash size={20} />
+        <TbTrash size={20} /> 
       </button>
     </div>
   );
